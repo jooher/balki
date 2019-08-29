@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Декор</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+	<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<h1>Декоративные фальш-балки</h1>
+
+<!--
+	<h2>Отделка</h2>
+	<h2>Размеры</h2>
+-->
+<form	id="form">
+
+	<h2>Рассчитать стоимость</h2>
+
+	<section id="profile">
+		<label class="p1"><input type="radio" name="profile" value="1"/>Доска</label>
+		<label class="p2"><input type="radio" name="profile" value="2"/>Уголок</label>
+		<label class="p3"><input type="radio" name="profile" value="3" checked>Балка</label>
+		<label class="p4"><input type="radio" name="profile" value="4"/>Колонна</label>
+	</section>
+	
+	<section id="size">
+		<label>Ширина, мм<input type="number" name="width" value="150" min="60" max="600" step="10"/></label>
+		<label>Высота, мм<input type="number" name="height" value="150" min="20" max="600" step="10"/></label>
+		<label>Длина, мм<input type="number" name="length" value="3000" min="1000" max="6000" step="100"/></label>
+	</section>
+	
+	<section id="finish">
+		<label>Рельеф
+			<select name="brush">
+				<option	value="0">Без брашировки</option>
+				<option	value="1" selected>Стандартная брашировка</option>
+				<option	value="2">Глубокая брашировка</option>
+			</select>
+		</label>
+		<label>Покраска
+			<select name="paint">
+				<option value="0">Без покраски</option>
+				<option value="1" selected>Стандартная</option>
+				<option value="2">Двухцветная</option>
+				<option value="3">С обжигом</option>
+			</select>
+		</label>
+	</section>
+	
+	<section id="qty">
+		<label>Количество<input type="number" name="qty" value="1"/></label>
+	</section>
+	
+	<section id="output">
+		<label>Розничная цена за метр, руб	<input type="number" name="meter" disabled /></label>
+		<label>Розничная цена за изделие, руб	<input type="number" name="balka" disabled /></label>
+		<label>Розничная стоимость общая, руб	<input type="number" name="summa" disabled /></label>
+		<label>Скидка за объем, %		<input type="number" name="skidka" disabled /></label>
+		<label id="itogo">Итоговая стоимость, руб<input type="number" name="itogo" disabled /></label>
+	</section>
+
+</form>
+
+<div class="cap">
+
+	<div class="why">
+		<ul title="Все как полагается:" class="ticks">
+			<li>Натуральная сухая древесина</li>
+			<li>Безопасные краски на водной основе</li>
+			<li>Любые размеры по вашему ТЗ</li>
+			<li>Лучшая цена на рынке</li>
+		</ul>
+	</div>
+	
+	<div class="discounts">	
+		<ul title="Скидки за объем:">
+			<li>5% при заказе от 25 т.р.</li>
+			<li>10% при заказе от 50 т.р.</li>
+			<li>15% при заказе от 100 т.р.</li>
+			<li>20% при заказе от 250 т.р.</li>
+		</ul>
+	</div>
+	
+	<div class="contact">
+		<div class="tel">
+			<a class="value" href="tel:+79268274271">+7 926 8274271</a>
+			<a href="whatsapp://send?phone=%2B79268274271">Whatsapp</a>
+			<a href="viber://add?number=%2B79268274271">Viber</a>
+		</div>
+		<!--div class="fn-org">Русдекор</div-->
+		<div class="adr">
+			<div><b>Адрес производства:</b></div>
+			<span class="region">Московская область,</span>,<br/>
+			<span class="locality">Лобня</span>, <span class="street-address">Научный городок, 1</span><br/>
+		</div>
+	</div>
+
+</div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
+
