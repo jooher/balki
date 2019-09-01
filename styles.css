@@ -93,7 +93,7 @@ label#itogo {
 
 .ticks>li,.minus>li{list-style: none;}
 .ticks>li::before {content: "✔"; color: green; margin-right: .5em;}
-.minus>li::before {content: "-"; color: green; margin-right: .5em;}
+.minus>li::before {content: "*"; color: green; margin-right: .5em;}
 
 .contact {
     display: inline-block;
